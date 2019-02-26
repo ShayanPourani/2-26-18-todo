@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title></title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body style="text-align:center;">
+<h1>To Do List</h1>
+<form action="/action" method="post">
+  <table>
+    <tr>
+      <td>Name
+        <input type="text" name="title" value="$titleValue">
+      </td>
+      <td>Date<br>
+        <input type="date" name="dueDate" value="$dueDateValue">
+      </td>
+      <td>Priority
+        <input type="number" name="priority" min="1" max="4" value="$priorityValue">
+      </td>
+      <td><input type="image" name="$addName" src="$addIcon">
+      </td>
+    </tr>
+  </table>
+  $toDoList
+</form>
+</body>
+</html>
